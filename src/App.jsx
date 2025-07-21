@@ -68,8 +68,8 @@ function App() {
     }
   };
   return (
-   <>
-  <div style={{ padding: "2rem", fontFamily: "Arial, sans-serif" }}>
+   <div style={{ backgroundColor: "#f8f9fa", minHeight: "300px", margin: "40px auto",padding:"10px 20px", maxWidth: "500px" }}>
+  <div style={{  fontFamily: "Arial, sans-serif" }}>
     <p>Address: {account}</p>
     <h1 style={{ marginBottom: "1rem" }}>Set Message on Smart Contract</h1>
     <div style={{display: "block"}}>
@@ -112,7 +112,7 @@ function App() {
     
   </div>
 
-  <div style={{ padding: "15px", }}>
+  <div style={{ padding: "", }}>
     <button
       onClick={handleGet}
       style={{
@@ -130,10 +130,10 @@ function App() {
     </button>
     
     <p style={{ fontSize: "18px", color: "#333" }}>
-      <strong>Current message:</strong> {message}
+      <strong>Current message:</strong> <span style={{  fontSize:"25px" }}>{message}</span>
     </p>
   </div>
-</>
+</div>
 
   );
 }
